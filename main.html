@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--221RDB389 Lauma Gailīte-->
+<html lang="lv">
+
+<head>
+<title>Skaitļu ģenerators</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+        <h1>Skaitļu ģenerators</h1>
+        <h2 type="ievadi">Ievadi skaitli:</h2>
+        <input type="input"><br><br> <!--Ja ievada burtu, vajag lai izmetas error-->
+            <!--lai atvertu vscode preview: ctrl+k v-->
+        <button type="button" onclick="ok()">OK</button>
+        <a id="demo1"></a><br>
+
+        <button type="button" onclick="newGame()">New Game</button>
+        <p>Skaitlis, ko vajadzēja uzminēt:</p><p id="demo2"></p>
+        <a id="demo2"></a>
+
+    <script>
+        function ok() {
+            document.getElementById("demo1").innerHTML = "Hello";  // varbut jaizmanto console log jo to radija lekcija
+        }
+        function newGame() {
+            let x = Math.random();
+            document.getElementById("demo2").innerHTML = let x;
+            
+        }
+        function rezultats(){ // ja input ir vienads ar math random, tad output pareizi / nepareizi
+            
+        }
+    </script>
+
+
+    <style>
+        body{
+            background-color:rgb(29, 38, 35);
+            color:rgb(255, 255, 255);
+            display: block;
+            margin: 8px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button{
+            background-color:rgb(43, 0, 144);
+            color:rgb(255, 255, 255);
+            border: none;
+            text-align: center;
+            padding: 4px 10px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+        }
+    </style>
+
+</body>
+</html>
